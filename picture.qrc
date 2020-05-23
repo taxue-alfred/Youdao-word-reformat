@@ -1,0 +1,8 @@
+<RCC>
+  <qresource>
+    <file>images/sample.png</file>
+    <file>images/sample2.png</file>
+    <file>images/icon.png</file>
+    <file>images/begin.png</file>
+  </qresource>
+</RCC>
