@@ -13,7 +13,7 @@ class mainform(QMainWindow, gui.Ui_MainWindow):
     def __init__(self):
         super().__init__()
         self.setupUi(self)
-        # 美化参数d
+        # 美化参数
         self.beautify()
         # 界面属性设置
         self._translate = QtCore.QCoreApplication.translate
@@ -119,6 +119,8 @@ class mainform(QMainWindow, gui.Ui_MainWindow):
 
 
 if __name__ == '__main__':
+    QtCore.QCoreApplication.setAttribute(QtCore.Qt.AA_EnableHighDpiScaling)
+
     app = QApplication(sys.argv)
     ui = mainform()
     ui.show()
