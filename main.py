@@ -35,8 +35,9 @@ class mainform(QMainWindow, gui.Ui_MainWindow):
     def beautify(self):
         # self.setWindowOpacity(0.96)
         self.setWindowFlag(QtCore.Qt.FramelessWindowHint)  # 隐藏顶栏
+        # self.setAttribute(QtCore.Qt.WA_TranslucentBackground)
         self.setWindowTitle("YoudaoRe")  # 设置名称
-        self.setStyleSheet("#MainWindow{background-color:white}")  # 背景色
+        self.setStyleSheet("QWidget{background-color:white;}")  # 背景色
         self.setWindowIcon(QIcon(":/images/icon.png"))  # 图标
         self.setFixedSize(self.width(), self.height())
         self.icon_label.setScaledContents(True)
